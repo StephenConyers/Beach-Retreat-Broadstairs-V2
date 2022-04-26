@@ -1,0 +1,74 @@
+﻿$primary: #C2B3A1;
+$secondary: #7AC9D6;
+$tertiary: #E2E6EA;
+$body-color: #074c76;
+$line-height-base: 2;
+$headings-color: $secondary;
+$headings-font-weight: 600;
+
+$theme-colors: ( "secondary-dark": #282E34 );
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "partials/animate.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+
+}
+
+section {
+    padding: 32px 0;
+
+    &.img-section {
+        padding: 0 16px;
+
+        .img-r {
+            padding-right: 8px;
+        }
+
+        .img-l {
+            padding-left: 8px;
+        }
+
+        .img-t {
+            padding-top: 8px;
+        }
+
+        .img-b {
+            padding-bottom: 8px;
+        }
+    }
+}
+
+.jumbo {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../Content/img/background.png');
+
+    .jumbo-logo {
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+        mix-blend-mode: color-dodge;
+    }
+
+    .jumbo-overlay {
+        position: absolute;
+        width: 680px;
+        height: 400px;
+        bottom: 0;
+        right: 200px;
+        background-color: white;
+        border-radius: 16px 16px 0 0;
+    }
+}
+
+footer {
+    padding: 16px 16px 0 16px;
+
+    .footer-inner {
+        background-color: $primary;
+    }
+}
