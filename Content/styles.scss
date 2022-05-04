@@ -1,12 +1,12 @@
 ﻿$primary: #C2B3A1;
+$primary-dark: #826B4F;
 $secondary: #7AC9D6;
+$secondary-dark: #2D7F8D;
 $tertiary: #E2E6EA;
 $body-color: #074c76;
-$line-height-base: 2;
-$headings-color: $secondary;
+$line-height-base: 1.5;
+$headings-color: $body-color;
 $headings-font-weight: 600;
-
-$theme-colors: ( "secondary-dark": #282E34 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "partials/animate.scss";
@@ -40,6 +40,16 @@ section {
     }
 }
 
+.btn {
+    text-transform: uppercase;
+    border-radius: 24px;
+    color: white;
+
+    &.btn-body {
+        background-color: $body-color;
+    }
+}
+
 .jumbo {
     position: relative;
     background-size: cover;
@@ -57,16 +67,92 @@ section {
     .jumbo-overlay {
         position: absolute;
         width: 680px;
-        height: 400px;
         bottom: 0;
         right: 200px;
         background-color: white;
         border-radius: 16px 16px 0 0;
+
+        .overlay-border {
+            border-right: 1px solid #E2E6EA;
+
+            .overlay-inner-border {
+                border-bottom: 1px solid #E2E6EA;
+            }
+        }
+
+        .overlay-logo {
+            position: absolute;
+            top: -75px;
+            right: 14px;
+        }
+    }
+}
+
+ul {
+    line-height: 2.5;
+
+    li {
+        .tab-link {
+            display: inline-flex;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+
+            span {
+                padding: 6px;
+                background-color: $primary;
+                border-radius: 6px;
+                color: $primary-dark;
+                margin-right: 16px;
+            }
+
+            &.link-alt {
+                color: $secondary;
+
+                span {
+                    background-color: $secondary;
+                    color: $secondary-dark;
+                }
+            }
+        }
+    }
+}
+
+.tab-content {
+    padding-top: 38px;
+}
+
+.material-icons {
+    color: $secondary;
+}
+
+.carousel {
+    button {
+        width: 5%;
+    }
+}
+
+.card {
+    &.card-visits {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+h2 {
+    > small {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: normal;
+        line-height: 1;
+        color: $secondary;  
     }
 }
 
 footer {
     padding: 16px 16px 0 16px;
+    color: white;
+    line-height: 1.2;
 
     .footer-inner {
         background-color: $primary;

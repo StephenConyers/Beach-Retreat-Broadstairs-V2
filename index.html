@@ -4,23 +4,45 @@
     <title>Beach Retreat Broadstairs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="Content/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/19c0b0504b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="jumbo" fh-jumbo>
         <img class="jumbo-logo img-fluid" src="Content/img/logo.png" />
         <div class="jumbo-overlay">
-            <div class="row">
-                <div class="col-12 col-md-4 text-center">
-
+            <div class="row g-0">
+                <div class="col-12 col-md-2 text-center overlay-border">
+                    <div class="row g-0 d-flex h-100">
+                        <div class="col-12 d-flex justify-content-center align-items-center text-center overlay-inner-border p-4">
+                            <h2 class="h1"><span class="material-icons">people</span><br />4</h2>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center align-items-center text-center p-4">
+                            <h2 class="h1"><span class="material-icons">bathtub</span><br />2</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-8">
-
+                <div class="col-12 col-md-10 p-4">
+                    <div class="row">
+                        <div class="col-12 col-md-10">
+                            <div class="text-center">
+                                <p class="d-flex justify-content-center"><span class="material-icons">location_on</span>Beach Court, 3 Nash Gardens, Broadstairs CT10 1ER</p>
+                                <p class="d-flex justify-content-center"><span class="material-icons">phone</span>07987654321</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Beach Retreat Broadstairs</h2>
+                        <p>A Visit England 4 Star accredited self-catering holiday apartment ideally situated in a quiet area right in the heart of Broadstairs town centre, yet only two minutes' walk from its many local bars, cafes and restaurants and the picturesque sandy beach at Viking Bay. It also benefits from an allocated parking space which is a rarity for this location.</p>
+                        <p>Comfortably sleeping 4, Beach Retreat is ideal for your family holiday.</p>
+                    </div>
+                    <div>
+                        <a class="btn btn-secondary float-end">Book Now</a>
+                    </div>
                 </div>
             </div>
             <div class="overlay-logo">
-
+                <img class="img-fluid" src="Content/img/VisitEngland.png" />
             </div>
         </div>
     </div>
@@ -29,23 +51,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
+                    <h2><small>Property</small><br />Amenities</h2>
                     <p>The apartment is decorated to a high standard and offers an open plan kitchen/living space, master bedroom with en suite shower room, second bedroom with full size single bunk beds, a family bathroom and private courtyard.</p>
                     <ul class="list-unstyled">
-                        <li><span class="material-symbols-outlined">check</span> Allocated parking space.</li>
-                        <li><span class="material-symbols-outlined">check</span> Wi-Fi internet access.</li>
-                        <li><span class="material-symbols-outlined">check</span> Smart TV with Netflix.</li>
-                        <li><span class="material-symbols-outlined">check</span> Dishwasher and washer dryer.</li>
-                        <li><span class="material-symbols-outlined">check</span> High chair and travel cot are available for our smaller guests.</li>
-                        <li><span class="material-symbols-outlined">check</span> Outside storage box containing skim and boogie boards, buckets and spades, balls, skittles and other beach games.</li>
-                        <li><span class="material-symbols-outlined">check</span> Indoor board games, cards, puzzles, pencils and colouring books.</li>
+                        <li><span class="material-icons">check</span> Allocated parking space.</li>
+                        <li><span class="material-icons">check</span> Wi-Fi internet access.</li>
+                        <li><span class="material-icons">check</span> Smart TV with Netflix.</li>
+                        <li><span class="material-icons">check</span> Dishwasher and washer dryer.</li>
+                        <li><span class="material-icons">check</span> High chair and travel cot are available for our smaller guests.</li>
+                        <li><span class="material-icons">check</span> Outside storage box containing skim and boogie boards, buckets and spades, balls, skittles and other beach games.</li>
+                        <li><span class="material-icons">check</span> Indoor board games, cards, puzzles, pencils and colouring books.</li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6">
+                    <h2><small>Important</small><br />Information</h2>
                     <p>There are a few steps leading down to the apartment which may not be suitable for a guest with limited mobility. For further details please read our Accessibility Guide.</p>
                     <p>Smoking is not permitted in the property or communal areas and unfortunately we are unable to accept pets.</p>
                     <p>This property is most suited to families and couples.</p>
                     <p>Arrival & departure days are usually Saturday to Saturday during peak season - other days may be suitable so please ask.</p>
                     <p>Minimum of 7 night stays during peak seasons.</p>
+                    <a href="mailto:bookings@beachretreatbroadstairs.co.uk" class="btn btn-body">Contact us</a>
                 </div>
             </div>
             <div class="row">
@@ -80,8 +105,78 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-12">
-
+                <div class="col-12 col-md-3">
+                    <h2><small>Broadstairs</small><br />Things to do</h2>
+                    <ul class="nav flex-column" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-link link-alt active" id="restaurants-tab" data-bs-toggle="tab" data-bs-target="#restaurants" type="button" role="tab" aria-controls="restaurants" aria-selected="true"><span class="material-icons">ramen_dining</span>Restaurants</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-link" id="activities-tab" data-bs-toggle="tab" data-bs-target="#activities" type="button" role="tab" aria-controls="activities" aria-selected="true"><span class="material-icons">beach_access</span>Local Activities</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-link link-alt" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="true"><span class="material-icons">event</span>Events</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-link" id="pubs-tab" data-bs-toggle="tab" data-bs-target="#pubs" type="button" role="tab" aria-controls="pubs" aria-selected="true"><span class="material-icons">local_bar</span>Pubs</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="restaurants" role="tabpanel" aria-labelledby="restaurants-tab">
+                            <h2>Restaurants</h2>
+                            <div id="carouselRestaurants" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 offset-md-1">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/V1/EAD/Aqua_43.PNG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Aqua 43 Dawwgg</h5>
+                                                                <p class="card-text">Some random text about this amazing Aqua43 Restaurant and stuff</p>
+                                                                <a href="#">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/V1/EAD/Aqua_43.PNG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Aqua 43 Dawwgg</h5>
+                                                                <p class="card-text">Some random text about this amazing Aqua43 Restaurant and stuff</p>
+                                                                <a href="#">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="activities" role="tabpanel" aria-labelledby="activities-tab">
+                            <h2>Local Activities</h2>
+                        </div>
+                        <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
+                            <h2>Events</h2>
+                        </div>
+                        <div class="tab-pane fade" id="pubs" role="tabpanel" aria-labelledby="pubs-tab">
+                            <h2>Pubs</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,12 +201,18 @@
     </section>
 
     <footer>
-        <div class="footer-inner p-4">
-
+        <div class="footer-inner p-2">
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-3 text-center">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> Beach Retreat Broadstairs
+                    <br />
+                    <small>Website by Stephen Conyers</small>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script src="Content/js/scripts.js"></script>
-    <script src="Content/js/main.js"></script>
+    <script src="Content/js/scripts.min.js"></script>
 </body>
 </html>
