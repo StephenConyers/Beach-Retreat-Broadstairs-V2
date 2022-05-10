@@ -133,6 +133,10 @@ ul {
 }
 
 .card {
+    .card-img-top {
+        height: 250px;
+    }
+
     &.card-visits {
         background-color: transparent;
         border: none;

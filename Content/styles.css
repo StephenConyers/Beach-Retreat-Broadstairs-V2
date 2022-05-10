@@ -14256,6 +14256,9 @@ ul li .tab-link.link-alt span {
   width: 5%;
 }
 
+.card .card-img-top {
+  height: 250px;
+}
 .card.card-visits {
   background-color: transparent;
   border: none;
