@@ -22,20 +22,55 @@ section {
     &.img-section {
         padding: 0 16px;
 
+        .img-sm-b {
+            @include media-breakpoint-down(md) {
+                padding-bottom: 16px !important;
+            }
+
+        }
+
         .img-r {
             padding-right: 8px;
+
+            @include media-breakpoint-down(md) {
+                padding-right: 0;
+            }
         }
 
         .img-l {
             padding-left: 8px;
+
+            @include media-breakpoint-down(md) {
+                padding-left: 0;
+            }
         }
 
         .img-t {
             padding-top: 8px;
+
+            @include media-breakpoint-down(md) {
+                padding-top: 0;
+            }
         }
 
         .img-b {
             padding-bottom: 8px;
+
+            @include media-breakpoint-down(md) {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+.list-unstyled {
+    &.list-height {
+        li {
+            display: flex;
+
+            span {
+                line-height: 1.6;
+            }
         }
     }
 }
@@ -57,10 +92,7 @@ section {
     background-image: url('../Content/img/background.png');
 
     .jumbo-logo {
-        position: absolute;
-        top: 45px;
-        left: 50%;
-        transform: translateX(-50%);
+        padding-top: 45px;
         mix-blend-mode: color-dodge;
     }
 
@@ -75,8 +107,16 @@ section {
         .overlay-border {
             border-right: 1px solid #E2E6EA;
 
+            @include media-breakpoint-down(lg) {
+                border: none;
+            }
+
             .overlay-inner-border {
                 border-bottom: 1px solid #E2E6EA;
+
+                @include media-breakpoint-down(lg) {
+                    border: none;
+                }
             }
         }
 
@@ -84,6 +124,23 @@ section {
             position: absolute;
             top: -75px;
             right: 14px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            display: block;
+            height: auto;
+            width: auto;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 0;
+
+            .overlay-logo {
+                position: absolute;
+                top: -75px;
+                right: 50%;
+                transform: translateX(50%)
+            }
         }
     }
 }

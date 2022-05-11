@@ -9,20 +9,26 @@
 </head>
 <body>
     <div class="jumbo" fh-jumbo>
-        <img class="jumbo-logo img-fluid" src="Content/img/logo.png" />
+        <div class="jumbo-logo container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img class="img-fluid" src="Content/img/logo.png" />
+                </div>
+            </div>
+        </div>
         <div class="jumbo-overlay">
             <div class="row g-0">
-                <div class="col-12 col-md-2 text-center overlay-border">
+                <div class="col-12 col-lg-2 text-center overlay-border">
                     <div class="row g-0 d-flex h-100">
-                        <div class="col-12 d-flex justify-content-center align-items-center text-center overlay-inner-border p-4">
+                        <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center text-center overlay-inner-border p-4">
                             <h2 class="h1"><span class="material-icons">people</span><br />4</h2>
                         </div>
-                        <div class="col-12 d-flex justify-content-center align-items-center text-center p-4">
+                        <div class="col-6 col-lg-12 d-flex justify-content-center align-items-center text-center p-4">
                             <h2 class="h1"><span class="material-icons">bathtub</span><br />2</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-10 p-4">
+                <div class="col-12 col-lg-10 p-4">
                     <div class="row">
                         <div class="col-12 col-md-10">
                             <div class="text-center">
@@ -37,7 +43,7 @@
                         <p>Comfortably sleeping 4, Beach Retreat is ideal for your family holiday.</p>
                     </div>
                     <div>
-                        <a class="btn btn-secondary float-end">Book Now</a>
+                        <a href="https://secure.bookalet.co.uk/widget?id=d91e5aa4-e65d-4b0d-9bde-67079358e86a&property=24368&monthcount=3&theme=9795" target="_blank" class="btn btn-secondary float-end">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +59,7 @@
                 <div class="col-12 col-md-6">
                     <h2><small>Property</small><br />Amenities</h2>
                     <p>The apartment is decorated to a high standard and offers an open plan kitchen/living space, master bedroom with en suite shower room, second bedroom with full size single bunk beds, a family bathroom and private courtyard.</p>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled list-height">
                         <li><span class="material-icons">check</span> Allocated parking space.</li>
                         <li><span class="material-icons">check</span> Wi-Fi internet access.</li>
                         <li><span class="material-icons">check</span> Smart TV with Netflix.</li>
@@ -74,12 +80,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <script src="https://widgets.bookalet.co.uk/publish.js" data-bookalet="021fc596-d42b-4644-b24b-d2b58cbdbace" data-property="24368" data-monthcount="1" data-theme="9795"></script>
+                <div class="col-12 pt-3">
+                    <script src="https://widgets.bookalet.co.uk/publish.js" data-bookalet="d91e5aa4-e65d-4b0d-9bde-67079358e86a" data-property="24368" data-monthcount="3"></script>
                 </div>
-                <div class="col-12 col-md-6">
+                <!--<div class="col-12 col-md-6">
                     <script src="https://widgets.bookalet.co.uk/publish.js" data-bookalet="c2011596-6447-4115-98aa-a1ff34290bf8" data-property="24368" data-theme="9795"></script>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -87,12 +93,12 @@
     <section class="img-section">
         <div class="row g-0">
             <div class="col-12 col-md-8">
-                <img class="img-fluid img-r" src="Content/img/img1.png" />
+                <img class="img-fluid img-r img-sm-b" src="Content/img/img1.png" />
             </div>
             <div class="col-12 col-md-4 d-flex">
                 <div class="row g-0 d-flex">
                     <div class="col-12 d-flex">
-                        <img class="img-fluid img-l img-b" src="Content/img/img2.png" />
+                        <img class="img-fluid img-l img-b img-sm-b" src="Content/img/img2.png" />
                     </div>
                     <div class="col-12 d-flex">
                         <img class="img-fluid img-l img-t" src="Content/img/img3.png" />
@@ -105,11 +111,11 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-lg-3">
                     <h2><small>Broadstairs</small><br />Things to do</h2>
                     <ul class="nav flex-column" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link tab-link link-alt active" id="restaurants-tab" data-bs-toggle="tab" data-bs-target="#restaurants" type="button" role="tab" aria-controls="restaurants" aria-selected="true"><span class="material-icons">ramen_dining</span>Restaurants</button>
+                            <button class="nav-link tab-link link-alt active" id="restaurants-tab" data-bs-toggle="tab" data-bs-target="#restaurants" type="button" role="tab" aria-controls="restaurants" aria-selected="true"><span class="material-icons">ramen_dining</span>Restaurants & Bars</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link tab-link" id="activities-tab" data-bs-toggle="tab" data-bs-target="#activities" type="button" role="tab" aria-controls="activities" aria-selected="true"><span class="material-icons">beach_access</span>Local Activities</button>
@@ -117,12 +123,9 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link tab-link link-alt" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="true"><span class="material-icons">event</span>Events</button>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link tab-link" id="pubs-tab" data-bs-toggle="tab" data-bs-target="#pubs" type="button" role="tab" aria-controls="pubs" aria-selected="true"><span class="material-icons">local_bar</span>Pubs</button>
-                        </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-9">
+                <div class="col-12 col-lg-9">
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="restaurants" role="tabpanel" aria-labelledby="restaurants-tab">
                             <h2>Restaurants</h2>
@@ -132,21 +135,21 @@
                                         <div class="row">
                                             <div class="col-12 col-md-10 offset-md-1">
                                                 <div class="row">
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
                                                             <img src="Content/img/EAD/Aqua_43.PNG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">Aqua 43</h5>
-                                                                <a href="https://aqua43.co.uk/">Find out more</a>
+                                                                <a href="https://aqua43.co.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
                                                             <img src="Content/img/EAD/Sardinia.JPG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">Sardinia</h5>
-                                                                <a href="https://sardiniarestaurant.co.uk/">Find out more</a>
+                                                                <a href="https://sardiniarestaurant.co.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -158,21 +161,21 @@
                                         <div class="row">
                                             <div class="col-12 col-md-10 offset-md-1">
                                                 <div class="row">
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
                                                             <img src="Content/img/EAD/Morelli.PNG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">Morellis</h5>
-                                                                <a href="https://www.morellisgelato.com/">Find out more</a>
+                                                                <a href="https://www.morellisgelato.com/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
                                                             <img src="Content/img/EAD/Posillipo.PNG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">Posillipo</h5>
-                                                                <a href="http://posillipo.squarespace.com/">Find out more</a>
+                                                                <a href="http://posillipo.squarespace.com/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -184,21 +187,21 @@
                                         <div class="row">
                                             <div class="col-12 col-md-10 offset-md-1">
                                                 <div class="row">
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
                                                             <img src="Content/img/EAD/The_Pavilion.PNG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">The Pavilion</h5>
-                                                                <a href="https://www.pavilion-broadstairs.co.uk/">Find out more</a>
+                                                                <a href="https://www.pavilion-broadstairs.co.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
                                                             <img src="Content/img/EAD/tartar.PNG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">The Tartar Frigate</h5>
-                                                                <a href="https://www.tartarfrigate.co.uk/">Find out more</a>
+                                                                <a href="https://www.tartarfrigate.co.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -210,21 +213,21 @@
                                         <div class="row">
                                             <div class="col-12 col-md-10 offset-md-1">
                                                 <div class="row">
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
                                                             <img src="Content/img/EAD/The_Charles_Dickens.PNG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">The Charles Dickens</h5>
-                                                                <a href="https://www.charlesdickensbroadstairs.co.uk/">Find out more</a>
+                                                                <a href="https://www.charlesdickensbroadstairs.co.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
                                                             <img src="Content/img/EAD/Jetty.PNG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">The Tartar Frigate</h5>
-                                                                <a href="https://www.jettybroadstairs.co.uk/">Find out more</a>
+                                                                <a href="https://www.jettybroadstairs.co.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -236,21 +239,21 @@
                                         <div class="row">
                                             <div class="col-12 col-md-10 offset-md-1">
                                                 <div class="row">
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
                                                             <img src="Content/img/EAD/Wyatt_Jones.PNG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">Wyatt & Jones</h5>
-                                                                <a href="https://wyattandjones.co.uk/">Find out more</a>
+                                                                <a href="https://wyattandjones.co.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
                                                             <img src="Content/img/EAD/Raindell.PNG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
                                                                 <h5 class="card-title">Raindell's</h5>
-                                                                <a href="https://www.raindells.com/">Find out more</a>
+                                                                <a href="https://www.raindells.com/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -271,53 +274,27 @@
                         </div>
                         <div class="tab-pane fade" id="activities" role="tabpanel" aria-labelledby="activities-tab">
                             <h2>Local Activities</h2>
-                            <div id="carouselRestaurants" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div id="carouselActivities" class="carousel carousel-dark slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
                                         <div class="row">
                                             <div class="col-12 col-md-10 offset-md-1">
                                                 <div class="row">
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
-                                                            <img src="Content/img/EAD/Aqua_43.PNG" class="card-img-top" alt="Aqua 43">
+                                                            <img src="Content/img/TTD/Rascal_Bay_Adventure_Golf.JPG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
-                                                                <h5 class="card-title">Aqua 43</h5>
-                                                                <a href="https://aqua43.co.uk/">Find out more</a>
+                                                                <h5 class="card-title">Rascal Bay Adventure Golf</h5>
+                                                                <a href="http://www.rascalbay.co.uk/manston/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
-                                                            <img src="Content/img/EAD/Sardinia.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <img src="Content/img/TTD/The_Viking_Coastal_Trail.png" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
-                                                                <h5 class="card-title">Sardinia</h5>
-                                                                <a href="https://sardiniarestaurant.co.uk/">Find out more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="10000">
-                                        <div class="row">
-                                            <div class="col-12 col-md-10 offset-md-1">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="card card-visits">
-                                                            <img src="Content/img/EAD/Morelli.PNG" class="card-img-top" alt="Aqua 43">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">Morellis</h5>
-                                                                <a href="https://www.morellisgelato.com/">Find out more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="card card-visits">
-                                                            <img src="Content/img/EAD/Posillipo.PNG" class="card-img-top" alt="Aqua 43">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">Posillipo</h5>
-                                                                <a href="http://posillipo.squarespace.com/">Find out more</a>
+                                                                <h5 class="card-title">The Viking Coastal Trail</h5>
+                                                                <a href="https://www.visitkent.co.uk/media/10407/vct-web-version.pdf" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -329,47 +306,21 @@
                                         <div class="row">
                                             <div class="col-12 col-md-10 offset-md-1">
                                                 <div class="row">
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
-                                                            <img src="Content/img/EAD/The_Pavilion.PNG" class="card-img-top" alt="Aqua 43">
+                                                            <img src="Content/img/TTD/Margate_Caves.png" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
-                                                                <h5 class="card-title">The Pavilion</h5>
-                                                                <a href="https://www.pavilion-broadstairs.co.uk/">Find out more</a>
+                                                                <h5 class="card-title">Margate Caves</h5>
+                                                                <a href="https://www.margatecaves.co.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
-                                                            <img src="Content/img/EAD/tartar.PNG" class="card-img-top" alt="Aqua 43">
+                                                            <img src="Content/img/TTD/Wingham_Wildlife_Park.png" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
-                                                                <h5 class="card-title">The Tartar Frigate</h5>
-                                                                <a href="https://www.tartarfrigate.co.uk/">Find out more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="10000">
-                                        <div class="row">
-                                            <div class="col-12 col-md-10 offset-md-1">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="card card-visits">
-                                                            <img src="Content/img/EAD/The_Charles_Dickens.PNG" class="card-img-top" alt="Aqua 43">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">The Charles Dickens</h5>
-                                                                <a href="https://www.charlesdickensbroadstairs.co.uk/">Find out more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="card card-visits">
-                                                            <img src="Content/img/EAD/Jetty.PNG" class="card-img-top" alt="Aqua 43">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title">The Tartar Frigate</h5>
-                                                                <a href="https://www.jettybroadstairs.co.uk/">Find out more</a>
+                                                                <h5 class="card-title">Wingham Wildlife Park</h5>
+                                                                <a href="https://winghamwildlifepark.co.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -381,21 +332,151 @@
                                         <div class="row">
                                             <div class="col-12 col-md-10 offset-md-1">
                                                 <div class="row">
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
-                                                            <img src="Content/img/EAD/Wyatt_Jones.PNG" class="card-img-top" alt="Aqua 43">
+                                                            <img src="Content/img/TTD/The_Bank_Job.JPG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
-                                                                <h5 class="card-title">Wyatt & Jones</h5>
-                                                                <a href="https://wyattandjones.co.uk/">Find out more</a>
+                                                                <h5 class="card-title">The Bank Job</h5>
+                                                                <a href="https://www.thebankjobbroadstairs.co.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-12 col-md">
                                                         <div class="card card-visits">
-                                                            <img src="Content/img/EAD/Raindell.PNG" class="card-img-top" alt="Aqua 43">
+                                                            <img src="Content/img/TTD/The_Turner_Contemporary.JPG" class="card-img-top" alt="Aqua 43">
                                                             <div class="card-body">
-                                                                <h5 class="card-title">Raindell's</h5>
-                                                                <a href="https://www.raindells.com/">Find out more</a>
+                                                                <h5 class="card-title">Turner Contemporary</h5>
+                                                                <a href="https://turnercontemporary.org/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 offset-md-1">
+                                                <div class="row">
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/TTD/Lillyputt_Golf.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Lillyputt Mini Golf</h5>
+                                                                <a href="https://www.minigolfbroadstairs.com/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/TTD/Dreamland.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Dreamland Margate</h5>
+                                                                <a href="https://www.dreamland.co.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 offset-md-1">
+                                                <div class="row">
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/TTD/Ramsgate_Tunnels.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Ramsgate Tunnels</h5>
+                                                                <a href="https://www.ramsgatetunnels.org/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/TTD/Revolution_Skate_&_Climbing_Park.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Revolution Skate & Climbing Park</h5>
+                                                                <a href="https://www.revolutionskatepark.co.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 offset-md-1">
+                                                <div class="row">
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/TTD/Kent_Surf_School.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Surf School Viking Bay</h5>
+                                                                <a href="https://kentsurfschool.co.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/TTD/Margate_Shell_Grotto.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Margate Shell Grotto</h5>
+                                                                <a href="https://www.shellgrotto.co.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 offset-md-1">
+                                                <div class="row">
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/TTD/Dickens_House.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Dickens House</h5>
+                                                                <a href="https://www.thanet.gov.uk/info-pages/dickens-house-museum/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/TTD/Lost_Island_Adventure_Golf.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Lost Island Adventure Golf</h5>
+                                                                <a href="https://www.lostislandgolf.co.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 offset-md-1">
+                                                <div class="row">
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/TTD/Crampton_Tower.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Crampton Tower</h5>
+                                                                <a href="https://www.cramptontower.co.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/TTD/The_Spitfire_Museum.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">The Spitfire Museum</h5>
+                                                                <a href="https://www.spitfiremuseum.org.uk/" target="_blank">Find out more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -404,11 +485,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselRestaurants" data-bs-slide="prev">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselActivities" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselRestaurants" data-bs-slide="next">
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselActivities" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -416,9 +497,96 @@
                         </div>
                         <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
                             <h2>Events</h2>
-                        </div>
-                        <div class="tab-pane fade" id="pubs" role="tabpanel" aria-labelledby="pubs-tab">
-                            <h2>Pubs</h2>
+                            <div id="carouselEvents" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 offset-md-1">
+                                                <div class="row">
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/Events/Folk_Week.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Broadstairs Folk Week</h5>
+                                                                <a href="https://broadstairsfolkweek.org.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/Events/Food_Festival.JPG" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Food Festival</h5>
+                                                                <a href="https://www.broadstairsfoodfestival.org.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 offset-md-1">
+                                                <div class="row">
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/Events/Fireworks.png" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Broadstairs Fireworks</h5>
+                                                                <a href="https://www.broadstairsfireworks.co.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/Events/Blues.jpg" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Broadstairs Blues Bash</h5>
+                                                                <a href="http://www.broadstairsbluesbash.com/home.html" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <div class="row">
+                                            <div class="col-12 col-md-10 offset-md-1">
+                                                <div class="row">
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/Events/Dickens_Festival.png" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Dickens Festival</h5>
+                                                                <a href="https://www.broadstairsdickensfestival.co.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md">
+                                                        <div class="card card-visits">
+                                                            <img src="Content/img/Events/Water_Gala.png" class="card-img-top" alt="Aqua 43">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Water Gala</h5>
+                                                                <a href="https://www.broadstairswatergala.co.uk/" target="_blank">Find out more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvents" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselEvents" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -431,10 +599,10 @@
             <div class="col-12 col-md-4 d-flex">
                 <div class="row g-0 d-flex">
                     <div class="col-12 d-flex">
-                        <img class="img-fluid img-r img-b" src="Content/img/img6.png" />
+                        <img class="img-fluid img-r img-b img-sm-b" src="Content/img/img6.png" />
                     </div>
                     <div class="col-12 d-flex">
-                        <img class="img-fluid img-r img-t" src="Content/img/img7.png" />
+                        <img class="img-fluid img-r img-t img-sm-b" src="Content/img/img7.png" />
                     </div>
                 </div>
             </div>

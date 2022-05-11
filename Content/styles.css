@@ -14165,17 +14165,49 @@ section {
 section.img-section {
   padding: 0 16px;
 }
+@media (max-width: 767.98px) {
+  section.img-section .img-sm-b {
+    padding-bottom: 16px !important;
+  }
+}
 section.img-section .img-r {
   padding-right: 8px;
+}
+@media (max-width: 767.98px) {
+  section.img-section .img-r {
+    padding-right: 0;
+  }
 }
 section.img-section .img-l {
   padding-left: 8px;
 }
+@media (max-width: 767.98px) {
+  section.img-section .img-l {
+    padding-left: 0;
+  }
+}
 section.img-section .img-t {
   padding-top: 8px;
 }
+@media (max-width: 767.98px) {
+  section.img-section .img-t {
+    padding-top: 0;
+  }
+}
 section.img-section .img-b {
   padding-bottom: 8px;
+}
+@media (max-width: 767.98px) {
+  section.img-section .img-b {
+    padding-bottom: 0;
+  }
+}
+
+.list-unstyled.list-height li {
+  display: flex;
+}
+.list-unstyled.list-height li span {
+  line-height: 1.6;
 }
 
 .btn {
@@ -14194,10 +14226,7 @@ section.img-section .img-b {
   background-image: url("img/background.png");
 }
 .jumbo .jumbo-logo {
-  position: absolute;
-  top: 45px;
-  left: 50%;
-  transform: translateX(-50%);
+  padding-top: 45px;
   mix-blend-mode: color-dodge;
 }
 .jumbo .jumbo-overlay {
@@ -14211,13 +14240,40 @@ section.img-section .img-b {
 .jumbo .jumbo-overlay .overlay-border {
   border-right: 1px solid #E2E6EA;
 }
+@media (max-width: 991.98px) {
+  .jumbo .jumbo-overlay .overlay-border {
+    border: none;
+  }
+}
 .jumbo .jumbo-overlay .overlay-border .overlay-inner-border {
   border-bottom: 1px solid #E2E6EA;
+}
+@media (max-width: 991.98px) {
+  .jumbo .jumbo-overlay .overlay-border .overlay-inner-border {
+    border: none;
+  }
 }
 .jumbo .jumbo-overlay .overlay-logo {
   position: absolute;
   top: -75px;
   right: 14px;
+}
+@media (max-width: 991.98px) {
+  .jumbo .jumbo-overlay {
+    display: block;
+    height: auto;
+    width: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+  }
+  .jumbo .jumbo-overlay .overlay-logo {
+    position: absolute;
+    top: -75px;
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 
 ul {
