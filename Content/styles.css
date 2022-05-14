@@ -14276,6 +14276,18 @@ section.img-section .img-b {
   }
 }
 
+.overlay-mobile {
+  margin-top: -350px;
+  position: relative;
+  background-color: white;
+}
+.overlay-mobile .overlay-logo {
+  position: absolute;
+  top: -75px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
 ul {
   line-height: 2.5;
 }
