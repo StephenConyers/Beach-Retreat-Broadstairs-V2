@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="jumbo" fh-jumbo>
-        <div class="jumbo-logo container">
+        <div class="jumbo-logo container wow fadeInDown">
             <div class="row">
                 <div class="col-12 text-center">
                     <img class="img-fluid" src="Content/img/logo.png" />
@@ -93,29 +93,29 @@
     <section class="img-section">
         <div class="row g-0">
             <div class="col-12 col-md-8">
-                <img class="img-fluid img-r img-sm-b" src="Content/img/img1.png" />
+                <img class="img-fluid img-r img-sm-b wow fadeInLeft" src="Content/img/img1.png" />
             </div>
             <div class="col-12 col-md-4 d-flex">
                 <div class="row g-0 d-flex">
                     <div class="col-12 d-flex">
-                        <img class="img-fluid img-l img-b img-sm-b" src="Content/img/img2.png" />
+                        <img class="img-fluid img-l img-b img-sm-b wow fadeInRight" src="Content/img/img2.png" />
                     </div>
                     <div class="col-12 d-flex">
-                        <img class="img-fluid img-l img-t" src="Content/img/img3.png" />
+                        <img class="img-fluid img-l img-t wow fadeInRight" src="Content/img/img3.png" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="d-none d-md-block">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3">
                     <h2><small>Broadstairs</small><br />Things to do</h2>
                     <ul class="nav flex-column" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link tab-link link-alt active" id="restaurants-tab" data-bs-toggle="tab" data-bs-target="#restaurants" type="button" role="tab" aria-controls="restaurants" aria-selected="true"><span class="material-icons">ramen_dining</span>Restaurants & Bars</button>
+                            <button class="nav-link tab-link link-alt active" id="restaurants-tab" data-bs-toggle="tab" data-bs-target="#restaurants" type="button" role="tab" aria-controls="restaurants" aria-selected="true"><span class="material-icons">ramen_dining</span>Bars & Restaurants</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link tab-link" id="activities-tab" data-bs-toggle="tab" data-bs-target="#activities" type="button" role="tab" aria-controls="activities" aria-selected="true"><span class="material-icons">beach_access</span>Local Activities</button>
@@ -128,7 +128,7 @@
                 <div class="col-12 col-lg-9">
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="restaurants" role="tabpanel" aria-labelledby="restaurants-tab">
-                            <h2>Restaurants</h2>
+                            <h2>Bars & Restaurants</h2>
                             <div id="carouselRestaurants" class="carousel carousel-dark slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
@@ -594,20 +594,138 @@
         </div>
     </section>
 
+    <section class="d-block d-md-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h2>Bars & Restaurants</h2>
+                    <div id="carouselRestaurants" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="card card-visits">
+                                    <img src="Content/img/EAD/Aqua_43.PNG" class="card-img-top" alt="Aqua 43">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aqua 43</h5>
+                                        <a href="https://aqua43.co.uk/" target="_blank">Find out more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card card-visits">
+                                    <img src="Content/img/EAD/Sardinia.JPG" class="card-img-top" alt="Aqua 43">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sardinia</h5>
+                                        <a href="https://sardiniarestaurant.co.uk/" target="_blank">Find out more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card card-visits">
+                                    <img src="Content/img/EAD/Morelli.PNG" class="card-img-top" alt="Aqua 43">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Morellis</h5>
+                                        <a href="https://www.morellisgelato.com/" target="_blank">Find out more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card card-visits">
+                                    <img src="Content/img/EAD/Posillipo.PNG" class="card-img-top" alt="Aqua 43">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Posillipo</h5>
+                                        <a href="http://posillipo.squarespace.com/" target="_blank">Find out more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card card-visits">
+                                    <img src="Content/img/EAD/The_Pavilion.PNG" class="card-img-top" alt="Aqua 43">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Pavilion</h5>
+                                        <a href="https://www.pavilion-broadstairs.co.uk/" target="_blank">Find out more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card card-visits">
+                                    <img src="Content/img/EAD/tartar.PNG" class="card-img-top" alt="Aqua 43">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Tartar Frigate</h5>
+                                        <a href="https://www.tartarfrigate.co.uk/" target="_blank">Find out more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card card-visits">
+                                    <img src="Content/img/EAD/The_Charles_Dickens.PNG" class="card-img-top" alt="Aqua 43">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Charles Dickens</h5>
+                                        <a href="https://www.charlesdickensbroadstairs.co.uk/" target="_blank">Find out more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card card-visits">
+                                    <img src="Content/img/EAD/Jetty.PNG" class="card-img-top" alt="Aqua 43">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Tartar Frigate</h5>
+                                        <a href="https://www.jettybroadstairs.co.uk/" target="_blank">Find out more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card card-visits">
+                                    <img src="Content/img/EAD/Wyatt_Jones.PNG" class="card-img-top" alt="Aqua 43">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Wyatt & Jones</h5>
+                                        <a href="https://wyattandjones.co.uk/" target="_blank">Find out more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="card card-visits">
+                                    <img src="Content/img/EAD/Raindell.PNG" class="card-img-top" alt="Aqua 43">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Raindell's</h5>
+                                        <a href="https://www.raindells.com/" target="_blank">Find out more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRestaurants" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselRestaurants" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h2>Local Activities</h2>
+                </div>
+                <div class="col-12">
+                    <h2>Events</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="img-section">
         <div class="row g-0">
             <div class="col-12 col-md-4 d-flex">
                 <div class="row g-0 d-flex">
                     <div class="col-12 d-flex">
-                        <img class="img-fluid img-r img-b img-sm-b" src="Content/img/img6.png" />
+                        <img class="img-fluid img-r img-b img-sm-b wow fadeInLeft" src="Content/img/img6.png" />
                     </div>
                     <div class="col-12 d-flex">
-                        <img class="img-fluid img-r img-t img-sm-b" src="Content/img/img7.png" />
+                        <img class="img-fluid img-r img-t img-sm-b wow fadeInLeft" src="Content/img/img7.png" />
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-8">
-                <img class="img-fluid img-l" src="Content/img/img5.png" />
+                <img class="img-fluid img-l wow fadeInRight" src="Content/img/img5.png" />
             </div>
         </div>
     </section>
