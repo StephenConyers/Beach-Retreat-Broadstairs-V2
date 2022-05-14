@@ -14232,13 +14232,13 @@ section.img-section .img-b {
 .jumbo .jumbo-overlay {
   position: absolute;
   width: 680px;
-  bottom: 0;
+  bottom: -0.5px;
   right: 200px;
   background-color: white;
   border-radius: 16px 16px 0 0;
 }
 .jumbo .jumbo-overlay .overlay-border {
-  border-right: 1px solid #E2E6EA;
+  border-right: 2px solid #E2E6EA;
 }
 @media (max-width: 991.98px) {
   .jumbo .jumbo-overlay .overlay-border {
@@ -14246,7 +14246,7 @@ section.img-section .img-b {
   }
 }
 .jumbo .jumbo-overlay .overlay-border .overlay-inner-border {
-  border-bottom: 1px solid #E2E6EA;
+  border-bottom: 2px solid #E2E6EA;
 }
 @media (max-width: 991.98px) {
   .jumbo .jumbo-overlay .overlay-border .overlay-inner-border {
@@ -14264,7 +14264,7 @@ section.img-section .img-b {
     height: auto;
     width: auto;
     right: 0;
-    bottom: 0;
+    bottom: -0.5px;
     left: 0;
     border-radius: 0;
   }
@@ -14310,6 +14310,11 @@ ul li .tab-link.link-alt span {
 
 .carousel button {
   width: 5%;
+}
+@media (max-width: 767.98px) {
+  .carousel button {
+    width: 15%;
+  }
 }
 
 .card .card-img-top {

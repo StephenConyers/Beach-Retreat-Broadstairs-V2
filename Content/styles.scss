@@ -99,20 +99,20 @@ section {
     .jumbo-overlay {
         position: absolute;
         width: 680px;
-        bottom: 0;
+        bottom: -0.5px;
         right: 200px;
         background-color: white;
         border-radius: 16px 16px 0 0;
 
         .overlay-border {
-            border-right: 1px solid #E2E6EA;
+            border-right: 2px solid #E2E6EA;
 
             @include media-breakpoint-down(lg) {
                 border: none;
             }
 
             .overlay-inner-border {
-                border-bottom: 1px solid #E2E6EA;
+                border-bottom: 2px solid #E2E6EA;
 
                 @include media-breakpoint-down(lg) {
                     border: none;
@@ -131,7 +131,7 @@ section {
             height: auto;
             width: auto;
             right: 0;
-            bottom: 0;
+            bottom: -0.5px;
             left: 0;
             border-radius: 0;
 
@@ -186,6 +186,10 @@ ul {
 .carousel {
     button {
         width: 5%;
+
+        @include media-breakpoint-down(md) {
+            width: 15%;
+        }
     }
 }
 
