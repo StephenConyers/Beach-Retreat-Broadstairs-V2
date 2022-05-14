@@ -1,6 +1,6 @@
 ﻿# Beach Retreat Broadstairs
 Website Designed and Implemented by Stephen Conyers
-[Beach Retreat Broadstairs Website](https://www.beachretreatbroadstairs.co.uk/)
+<br />[Beach Retreat Broadstairs Website](https://www.beachretreatbroadstairs.co.uk/)
 ## About Beach Retreat
 Beach Retreat is ideally situated in a quiet area right in the heart of Broadstairs town centre, yet only two minutes’ walk from its many local bars, cafes and restaurants and the picturesque sandy beach at Viking Bay. It also benefits from an allocated parking space which is a rarity for this location.
 
