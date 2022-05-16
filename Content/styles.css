@@ -14159,6 +14159,14 @@ textarea.form-control-lg {
     transition: none !important;
   }
 }
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 section {
   padding: 32px 0;
 }
@@ -14203,6 +14211,11 @@ section.img-section .img-b {
   }
 }
 
+.unstyled-link {
+  text-decoration: none;
+  color: #074c76;
+}
+
 .list-unstyled.list-height li {
   display: flex;
 }
@@ -14218,6 +14231,9 @@ section.img-section .img-b {
 .btn.btn-body {
   background-color: #074c76;
 }
+.btn.btn-body:hover {
+  color: #C2B3A1;
+}
 
 .jumbo {
   position: relative;
@@ -14227,7 +14243,25 @@ section.img-section .img-b {
 }
 .jumbo .jumbo-logo {
   padding-top: 45px;
-  mix-blend-mode: color-dodge;
+}
+.jumbo .jumbo-logo img {
+  max-width: 600px;
+  opacity: 0.5;
+}
+@media (max-width: 1199.98px) {
+  .jumbo .jumbo-logo img {
+    max-width: 500px;
+  }
+}
+@media (max-width: 991.98px) {
+  .jumbo .jumbo-logo img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 575.98px) {
+  .jumbo .jumbo-logo img {
+    max-width: 100%;
+  }
 }
 .jumbo .jumbo-overlay {
   position: absolute;
@@ -14240,7 +14274,7 @@ section.img-section .img-b {
 .jumbo .jumbo-overlay .overlay-border {
   border-right: 2px solid #E2E6EA;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .jumbo .jumbo-overlay .overlay-border {
     border: none;
   }
@@ -14248,7 +14282,7 @@ section.img-section .img-b {
 .jumbo .jumbo-overlay .overlay-border .overlay-inner-border {
   border-bottom: 2px solid #E2E6EA;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .jumbo .jumbo-overlay .overlay-border .overlay-inner-border {
     border: none;
   }
@@ -14258,7 +14292,7 @@ section.img-section .img-b {
   top: -75px;
   right: 14px;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .jumbo .jumbo-overlay {
     display: block;
     height: auto;

@@ -13,7 +13,11 @@ $headings-font-weight: 600;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 body {
+    font-family: 'Open Sans', sans-serif;
+}
 
+a {
+    text-decoration: none;
 }
 
 section {
@@ -63,6 +67,11 @@ section {
     }
 }
 
+.unstyled-link {
+    text-decoration: none;
+    color: $body-color;
+}
+
 .list-unstyled {
     &.list-height {
         li {
@@ -82,6 +91,10 @@ section {
 
     &.btn-body {
         background-color: $body-color;
+
+        &:hover {
+            color: $primary;
+        }
     }
 }
 
@@ -93,7 +106,23 @@ section {
 
     .jumbo-logo {
         padding-top: 45px;
-        mix-blend-mode: color-dodge;
+
+        img {
+            max-width: 600px;
+            opacity: 0.5;
+
+            @include media-breakpoint-down(xl) {
+                max-width: 500px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                max-width: 400px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                max-width: 100%;
+            }
+        }
     }
 
     .jumbo-overlay {
@@ -107,14 +136,14 @@ section {
         .overlay-border {
             border-right: 2px solid #E2E6EA;
 
-            @include media-breakpoint-down(lg) {
+            @include media-breakpoint-down(xl) {
                 border: none;
             }
 
             .overlay-inner-border {
                 border-bottom: 2px solid #E2E6EA;
 
-                @include media-breakpoint-down(lg) {
+                @include media-breakpoint-down(xl) {
                     border: none;
                 }
             }
@@ -126,7 +155,7 @@ section {
             right: 14px;
         }
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             display: block;
             height: auto;
             width: auto;
