@@ -14393,3 +14393,7 @@ footer {
 footer .footer-inner {
   background-color: #C2B3A1;
 }
+
+#calendar {
+  min-height: 490px;
+}
